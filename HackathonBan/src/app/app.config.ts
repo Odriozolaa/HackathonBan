@@ -1,9 +1,12 @@
-import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { provideRouter, withComponentInputBinding } from '@angular/router';
+import { appRoutes } from './app.routes'; // Importar las rutas definidas
+import { AppComponent } from './app.component';
 
-import { routes } from './app.routes';
-import { provideClientHydration } from '@angular/platform-browser';
-
-export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration()]
+// Exportamos la configuración general de la aplicación
+export const appConfig = {
+  providers: [
+    provideRouter(appRoutes, withComponentInputBinding()), // Usa las rutas importadas aquí
+    provideHttpClient(withFetch())
+  ]
 };
