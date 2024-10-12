@@ -1,0 +1,20 @@
+.header-container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: url('assets/images/header-background.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo-container {
+position: relative;
+z-index: 1;
+}
+
+.logo {
+height: 50px;
+}
