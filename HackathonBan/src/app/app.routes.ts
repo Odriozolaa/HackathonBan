@@ -7,6 +7,6 @@ import { HomeComponent } from './components/home/home.component';import { AuthGu
 export const appRoutes: Routes = [
 { path: 'register', component: RegisterComponent },
 { path: 'login', component: LoginComponent },
-{ path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+{ path: 'dashboard', component: DashboardComponent },
 { path: '', component: HomeComponent, pathMatch: 'full' } 
 ];
