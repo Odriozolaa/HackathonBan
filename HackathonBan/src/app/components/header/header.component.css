@@ -5,19 +5,25 @@
 }
 
 html, body {
-height: 100%;
-width: 100%;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Ocultar cualquier desbordamiento horizontal */
 }
 
 .header-container {
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 64px;
     background-color: #EB0029;
+    background-image: url('/assets/navigation.png'); /* Corrección de la ruta */
     background-repeat: repeat-x;
-    background-image:url('/assets/navigation.png');
+    background-size: contain; /* Ajustar la imagen para que no se vea cortada */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 145px;
 }
 
 .logo-container {
@@ -25,5 +31,5 @@ width: 100%;
 }
 
 .logo {
-    height: 50px;
+    height: 40px; /* Reducido el tamaño del logo para hacerlo más pequeño */
 }
