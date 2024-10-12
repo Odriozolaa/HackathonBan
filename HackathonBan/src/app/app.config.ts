@@ -1,5 +1,7 @@
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { importProvidersFrom } from '@angular/core';
 import { appRoutes } from './app.routes'; // Importar las rutas definidas
 import { AppComponent } from './app.component';
 
@@ -7,6 +9,7 @@ import { AppComponent } from './app.component';
 export const appConfig = {
   providers: [
     provideRouter(appRoutes, withComponentInputBinding()), // Usa las rutas importadas aquí
-    provideHttpClient(withFetch())
+    provideHttpClient(withFetch()),
+    importProvidersFrom(FormsModule)
   ]
 };

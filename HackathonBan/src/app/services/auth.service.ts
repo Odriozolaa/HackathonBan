@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'https://tu-backend-url.com/api/auth'; // Cambia esto con la URL del backend
+  private apiUrl = 'https://tu-backend-url.com/api/auth'; // URL del backend (cambia esto)
 
   constructor(private http: HttpClient) { }
 
@@ -18,11 +18,6 @@ export class AuthService {
   // Método para iniciar sesión
   login(credentials: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/login`, credentials);
-  }
-
-  // Método para cerrar sesión (si es necesario)
-  logout(): void {
-    localStorage.removeItem('token'); // Remueve el token del almacenamiento local
   }
 
   // Método para comprobar si el usuario está autenticado
