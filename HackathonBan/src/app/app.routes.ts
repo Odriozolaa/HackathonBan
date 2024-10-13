@@ -17,5 +17,7 @@ export const appRoutes: Routes = [
 { path: 'productos', component: ProductosComponent },
 { path: 'ruta', component: RutaComponent },
 { path: 'recommended-modules', component: RecommendedModulesComponent},
-{path: 'calculadora', component: CalculadoraComponent}
+{path: 'calculadora', component: CalculadoraComponent},
+{ path: 'modules', component: ModulesComponent},
+{path: 'linea', component: LineaComponent}
 ];
