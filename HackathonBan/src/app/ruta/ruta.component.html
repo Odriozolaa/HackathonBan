@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<title>Dashboard Responsive</title>
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.custom-card {
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+</style>
+</head>
+<body>
+<div class="container mt-5">
+<div class="row">
+    <div class="col-12 mb-3">
+    <div class="custom-card text-center">
+        <h3>Encabezado Principal</h3>
+    </div>
+    </div>
+    <div class="col-md-6 mb-3">
+    <div class="custom-card h-100 d-flex align-items-center justify-content-center">
+        <h4>Izquierda Grande</h4>
+    </div>
+    </div>
+    <div class="col-md-6 mb-3">
+    <div class="row h-100">
+        <div class="col-12 mb-3">
+        <div class="custom-card d-flex align-items-center justify-content-center h-100">
+            <h4>Derecha Superior</h4>
+        </div>
+        </div>
+        <div class="col-12 mb-3">
+        <div class="custom-card d-flex align-items-center justify-content-center h-100">
+            <h4>Derecha Inferior</h4>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
