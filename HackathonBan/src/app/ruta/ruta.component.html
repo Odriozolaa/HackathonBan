@@ -1,27 +1,26 @@
 <body>
     <div class="container mt-5">
-    <div class="row">
+      <div class="row">
         <div class="col-12 mb-3">
-        <div class="custom-card text-center sticky-header">
+          <div class="custom-card text-center sticky-header">
             <app-linea></app-linea>
+          </div>
         </div>
+  
+        <!-- Contenedor donde está el chatbot -->
+        <div class="col-12 col-md-8 mb-3 d-flex align-items-stretch">
+          <div class="custom-card h-100 d-flex align-items-center justify-content-center">
+            <app-chatbot></app-chatbot>
+          </div>
         </div>
-
-        <!-- Contenedor donde está la frase -->
-        <div class="col-md-6 mb-3 d-flex align-items-stretch">
-        <div class="custom-card h-100 d-flex align-items-center justify-content-center">
-            <h4 class="text-center">
-            <em>¡Toma el control de tus finanzas con una ruta de aprendizaje personalizada! Aprende desde lo básico hasta lo avanzado, a tu propio ritmo y según tus necesidades. ¡Empieza hoy y asegura tu futuro financiero!</em>
-            </h4>
-        </div>
-        </div>
-
+  
         <!-- Contenedor donde está la calculadora -->
-        <div class="col-md-6 mb-3 align-items-stretch">
-        <div class="custom-card d-flex align-items-center justify-content-center h-100">
+        <div class="col-12 col-md-4 mb-3 d-flex align-items-stretch">
+          <div class="custom-card d-flex align-items-center justify-content-center h-100">
             <app-calculadora></app-calculadora>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
-    </div>
-</body>
+  </body>
+  

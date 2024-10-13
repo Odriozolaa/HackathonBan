@@ -1,0 +1,18 @@
+<div class="chatbot-container">
+    <!-- Título del chatbot -->
+    <h3 class="chatbot-title text-center">Asistente Financiero</h3>
+  
+    <!-- Historial de conversación -->
+    <div class="chat-history">
+      <div *ngFor="let message of chatHistory" class="chat-message" [ngClass]="{'user-message': message.from === 'user', 'bot-message': message.from === 'bot'}">
+        <span>{{ message.text }}</span>
+      </div>
+    </div>
+  
+    <!-- Entrada del mensaje -->
+    <div class="chat-input d-flex">
+      <input [(ngModel)]="userQuestion" type="text" placeholder="Haz una pregunta sobre finanzas..." (keyup.enter)="sendQuestion()" class="form-control" />
+      <button (click)="sendQuestion()" class="btn btn-send">Enviar</button>
+    </div>
+  </div>
+  

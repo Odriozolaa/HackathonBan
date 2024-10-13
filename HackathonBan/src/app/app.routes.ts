@@ -9,6 +9,7 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { LineaComponent } from './linea/linea.component';
 import { ModulesComponent } from './modules/modules.component';
 import { SurveyComponent } from './survey/survey.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
 
 
 export const appRoutes: Routes = [
@@ -21,5 +22,7 @@ export const appRoutes: Routes = [
 {path: 'calculadora', component: CalculadoraComponent},
 { path: 'modules', component: ModulesComponent},
 {path: 'linea', component: LineaComponent},
-{path: 'survey', component: SurveyComponent}
+{path: 'survey', component: SurveyComponent},
+{path:  'chatbot', component: ChatbotComponent}
+
 ];

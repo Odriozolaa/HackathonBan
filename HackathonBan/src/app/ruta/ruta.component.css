@@ -1,11 +1,16 @@
-*{
-    font-family: 'Roboto', sans-serif;
-}
-body {
-    font-size: 18px;
-}
 .custom-card {
     border-radius: 10px;
     padding: 1rem;
     background-color: #ffffff;
+    width: 100%; /* Asegurar que los contenedores ocupen todo el ancho disponible */
+}
+
+@media (min-width: 768px) {
+  .col-md-6:nth-child(1) {
+    width: 65%; /* El chatbot ocupa más espacio en pantallas medianas o grandes */
+  }
+
+  .col-md-6:nth-child(2) {
+    width: 35%; /* La calculadora ocupa menos espacio */
+  }
 }
