@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { LoginComponent } from "../login/login.component";
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [],
+  imports: [LoginComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
