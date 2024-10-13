@@ -1,0 +1,27 @@
+<div class="col-12 d-flex align-items-stretch">
+    <div class="w-100 bg-light text-center rounded border d-flex flex-column align-items-center justify-content-center shadow p-4">
+      <h4 class="simulator-section-title">Calculadora de Ahorro</h4>
+      <form (ngSubmit)="calculateSavings()">
+        <div class="form-group">
+          <label for="amount">Cantidad a ahorrar (MXN):</label>
+          <input type="text" [value]="amount" (input)="formatAmount($event)" id="amount" name="amount" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="time">Años:</label>
+          <input type="number" [(ngModel)]="time" id="time" name="time" class="form-control" placeholder="Número de años" required />
+        </div>
+        <div class="form-group">
+          <label for="rate">Tasa de interés anual (%):</label>
+          <input type="text" [value]="rate" (input)="formatRate($event)" id="rate" name="rate" class="form-control" placeholder="Ingresa la tasa de interés" required />
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Calcular</button>
+      </form>
+  
+      <!-- Muestra los resultados -->
+      <div *ngIf="totalSavings !== null" class="result mt-3">
+        <h5>Resultado:</h5>
+        <p>Total estimado después de {{ time }} años: <strong>{{ totalSavings | currency:'MXN' }}</strong></p>
+      </div>
+    </div>
+  </div>
+  

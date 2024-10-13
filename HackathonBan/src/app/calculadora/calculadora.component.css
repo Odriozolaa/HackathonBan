@@ -1,0 +1,37 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.simulator-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #EB0029;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+    .result {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: #EB0029;
+    border-color: #EB0029;
+}
+
+.btn-primary:hover {
+    background-color: #DB0026;
+    border-color: #DB0026;
+}
