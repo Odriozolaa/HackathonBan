@@ -2,3 +2,17 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     }
+    /* Estilo del botón de iniciar sesión */
+button[type="submit"] {
+    background-color: #EB0029; /* Color de fondo predeterminado */
+    color: #ffffff; /* Color de la letra */
+    font-family: 'Roboto', sans-serif; /* Tipografía Gotham */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: 500; /* Peso medio para Gotham Medium */
+    border: none; /* Sin borde */
+}
+
+button[type="submit"]:hover {
+    background-color: #DB0026; /* Color de fondo al hacer hover */
+    color: #ffffff; /* Color de la letra al hacer hover */
+}

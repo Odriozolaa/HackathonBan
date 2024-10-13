@@ -1,35 +1,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
-<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
-<div class="row w-100 h-100 bg-light rounded overflow-hidden" style="padding: 0.5rem; max-width: 1200px;">
-<div class="col-12 col-md-3 d-flex align-items-stretch mb-3">
-    <div class="w-100 bg-light text-center rounded border d-flex align-items-center justify-content-center h-100">
-    <app-login></app-login>
+
+<div class="container-fluid vh-100 d-flex flex-column justify-content-start">
+  <div class="row w-100 g-2" style="margin-top: 10px;"> <!-- Ajuste de margen superior reducido para acercar los contenedores al header -->
+    
+    <!-- Contenedor 1: Título de bienvenida y login -->
+    <div class="col-12 col-md-3 d-flex align-items-stretch">
+      <div class="w-100 bg-light text-center rounded border d-flex flex-column align-items-center justify-content-center">
+        <h2 class="welcome-title">Bienvenido a Educación Financiera con Banorte</h2>
+        <app-login></app-login> <!-- Componente Login -->
+      </div>
     </div>
-</div>
-<div class="col-12 col-md-6">
-    <div class="row h-100">
-    <div class="col-12 mb-3">
-        <div class="bg-light text-center rounded border d-flex align-items-center justify-content-center h-100">
-            RUTA DE APRENDIZAJE
+
+    <!-- Contenedor 2: El doble de ancho de contenedor 1 -->
+    <div class="col-12 col-md-6 d-flex align-items-stretch">
+      <div class="w-100 bg-light text-center rounded border d-flex flex-column justify-content-center shadow">
+        <h3 class="app-description-title">¿Qué es Educación Financiera con Banorte?</h3>
+        <p class="app-description-text">
+          Esta plataforma está diseñada para ayudarte a mejorar tus conocimientos financieros y tomar mejores decisiones. A través de módulos interactivos, estadísticas y análisis personalizados, podrás llevar el control de tus finanzas de manera efectiva. ¡Empieza ahora y mejora tu educación financiera con Banorte!
+        </p>
+        <p class="app-call-to-action mt-4">
+            ¡Empieza hoy mismo y toma el control de tu futuro financiero! <br>
+            <strong>Inicia sesión para acceder a todas las funcionalidades y recursos personalizados.</strong>
+          </p>
+      </div>
+    </div>
+
+    <!-- Contenedor 3: Igual a contenedor 1 -->
+    <div class="col-12 col-md-3 d-flex align-items-stretch">
+      <div class="w-100 bg-light text-center rounded border d-flex flex-column align-items-center justify-content-between">
+        <h4 class="app-features-title">Características clave</h4>
+
+        <!-- Lista de los puntos alineada hacia abajo -->
+        <ul class="app-features-list text-center">
+          <li>1. Módulos de aprendizaje interactivos</li>
+          <li>2. Estadísticas personalizadas</li>
+          <li>3. Recomendaciones personalizadas</li>
+          <li>4. Herramientas de simulación</li>
+          <li>5. Notificaciones y recordatorios</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor 4: Todo el ancho de la fila anterior -->
+  <div class="row w-100 g-2" style="margin-top: 0px;"> <!-- Reduciendo la separación entre los contenedores superiores y el contenedor 4 -->
+    <div class="col-12 d-flex align-items-stretch">
+      <div class="w-100 bg-light text-center rounded border d-flex align-items-center justify-content-center">
+        <div class="video-gallery">
+          <!-- Puedes agregar múltiples iframes de YouTube con videos relacionados -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/exampleVideoID1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/exampleVideoID2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+      </div>
     </div>
-    <div class="col-6 mb-3">
-        <div class="bg-light text-center rounded border d-flex align-items-center justify-content-center h-100">
-        NOTICIAS
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="bg-light text-center rounded border d-flex align-items-center justify-content-center h-100">
-        BENEFICIOS
-        </div>
-    </div>
-    </div>
-</div>
-<div class="col-12 col-md-3 d-flex align-items-stretch mb-3">
-    <div class="w-100 bg-light text-center rounded border d-flex align-items-center justify-content-center h-100">
-    dashboard
-    </div>
-</div>
-</div>
+  </div>
 </div>
