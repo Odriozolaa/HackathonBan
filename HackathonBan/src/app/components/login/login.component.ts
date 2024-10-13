@@ -15,17 +15,19 @@ export class LoginComponent {
 
   constructor(private authService: AuthService, private router: Router) {}
 
+  isLoading = false;
+
   login(): void {
     this.authService.login(this.credentials).subscribe(
       (response: any) => {
-        localStorage.setItem('token', response.token); // Guarda el token en localStorage
-        console.log('Inicio de sesión exitoso', response);
-        this.router.navigate(['/dashboard']); // Redirige al dashboard
+        console.log('Login exitoso', response);
+        this.router.navigate(['/home']); // Redirige al dashboard
       },
       error => {
         console.error('Error en el inicio de sesión', error);
-        alert('Credenciales incorrectas. Intente nuevamente.');
+        alert('Credenciales incorrectas o problema con el servidor.');
       }
     );
-  }
+  }  
 }
+

@@ -1,0 +1,64 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.welcome-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #EB0029;
+    margin-bottom: 20px;
+
+}
+
+.bg-light {
+    padding: 10px; /* Ajusta el padding dentro de los contenedores si es necesario */
+}
+.app-description-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #EB0029;
+
+}
+
+.app-description-text {
+    font-size: 18px;
+    color: #5b6670;
+    text-align: center;
+    padding: 0 20px;
+}
+.app-features-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #EB0029;
+    margin-bottom: 15px;
+}
+
+.app-features-list {
+    font-size: 18px;
+    color: #5b6670;
+    list-style-type: none;
+    padding: 0;
+    margin-top: auto; /* Para alinear la lista hacia abajo */
+}
+
+.app-features-list li {
+    margin-bottom: 10px;
+}
+.video-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5b6670;
+    margin-bottom: 20px;
+}
+
+.video-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
