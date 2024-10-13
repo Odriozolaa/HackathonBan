@@ -6,6 +6,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { RutaComponent } from './ruta/ruta.component';
 import { RecommendedModulesComponent } from './recommended-modules/recommended-modules.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { LineaComponent } from './linea/linea.component';
 import { ModulesComponent } from './modules/modules.component';
 
 
@@ -16,6 +17,5 @@ export const appRoutes: Routes = [
 { path: 'productos', component: ProductosComponent },
 { path: 'ruta', component: RutaComponent },
 { path: 'recommended-modules', component: RecommendedModulesComponent},
-{ path: 'calculadora', component: CalculadoraComponent},
-{ path: 'modules', component: ModulesComponent}
+{path: 'calculadora', component: CalculadoraComponent}
 ];
