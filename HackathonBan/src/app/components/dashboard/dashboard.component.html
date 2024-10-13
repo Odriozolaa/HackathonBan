@@ -12,7 +12,7 @@
     <!-- Contenedor 2: El doble de ancho de contenedor 1 -->
     <div class="col-12 col-md-6 d-flex align-items-stretch">
       <div class="w-100 bg-light text-center rounded border d-flex flex-column justify-content-center shadow">
-        <h3 class="app-description-title">¿Qué es Educación Financiera con Banorte?</h3>
+        <h3 class="app-description-titlHttpClientModule, HttpClient">¿Qué es Educación Financiera con Banorte?</h3>
         <p class="app-description-text">
           Esta plataforma está diseñada para ayudarte a mejorar tus conocimientos financieros y tomar mejores decisiones. A través de módulos interactivos, estadísticas y análisis personalizados, podrás llevar el control de tus finanzas de manera efectiva. ¡Empieza ahora y mejora tu educación financiera con Banorte!
         </p>
@@ -26,14 +26,11 @@
     <!-- Contenedor 3: Igual a contenedor 1 -->
     <div class="col-12 col-md-3 d-flex align-items-stretch">
       <div class="w-100 bg-light text-center rounded border d-flex flex-column align-items-center justify-content-between">
-        <h4 class="app-features-title">Características clave</h4>
-        <ul class="app-features-list text-center">
-          <li>1. Módulos de aprendizaje interactivos</li>
-          <li>2. Estadísticas personalizadas</li>
-          <li>3. Recomendaciones personalizadas</li>
-          <li>4. Herramientas de simulación</li>
-          <li>5. Notificaciones y recordatorios</li>
-        </ul>
+        <h4 class="app-features-title">Videos de Educacion Financiera</h4>
+        <div class="video-gallery">
+          <!-- Puedes agregar múltiples iframes de YouTube con videos relacionados -->
+          <iframe width="210" height="315" src="https://www.youtube.com/embed/exampleVideoID1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -42,12 +39,10 @@
   <div class="row w-100 g-2" style="margin-top: 0px;"> <!-- Reduciendo la separación entre los contenedores superiores y el contenedor 4 -->
     <div class="col-12 d-flex align-items-stretch">
       <div class="w-100 bg-light text-center rounded border d-flex align-items-center justify-content-center">
-        <div class="video-gallery">
-          <!-- Puedes agregar múltiples iframes de YouTube con videos relacionados -->
-          <iframe width="520" height="315" src="https://www.youtube.com/embed/exampleVideoID1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="520" height="315" src="https://www.youtube.com/embed/exampleVideoID2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <app-survey></app-survey>
       </div>
     </div>
   </div>
 </div>
+
+

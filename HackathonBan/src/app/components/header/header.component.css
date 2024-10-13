@@ -40,7 +40,7 @@ html, body {
 
 .navbar-nav {
     display: flex;
-    gap: 20px; /* Aumentar el espacio entre los links */
+    gap: 10px; /* Aumentar el espacio entre los links */
 }
 
 .nav-link {
@@ -76,7 +76,7 @@ html, body {
     }
 
     .navbar {
-        padding-right: 135px; /* Padding para pantallas grandes */
+        padding-right: 145px; /* Padding para pantallas grandes */
     }
 
     .navbar-nav {

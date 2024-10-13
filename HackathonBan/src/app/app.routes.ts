@@ -8,6 +8,7 @@ import { RecommendedModulesComponent } from './recommended-modules/recommended-m
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { LineaComponent } from './linea/linea.component';
 import { ModulesComponent } from './modules/modules.component';
+import { SurveyComponent } from './survey/survey.component';
 
 
 export const appRoutes: Routes = [
@@ -19,5 +20,6 @@ export const appRoutes: Routes = [
 { path: 'recommended-modules', component: RecommendedModulesComponent},
 {path: 'calculadora', component: CalculadoraComponent},
 { path: 'modules', component: ModulesComponent},
-{path: 'linea', component: LineaComponent}
+{path: 'linea', component: LineaComponent},
+{path: 'survey', component: SurveyComponent}
 ];

@@ -1,0 +1,35 @@
+<div class="survey-container">
+  <h4 class="survey-title text-center">Encuesta de Conocimiento Financiero</h4>
+  <form (ngSubmit)="submitSurvey()" class="row">
+    
+    <!-- Columna izquierda -->
+    <div class="col-12 col-md-6">
+      <div *ngFor="let question of leftColumnQuestions; let i = index" class="form-group">
+        <label>{{ question.question }}</label>
+        <div *ngFor="let option of question.options; let j = index">
+          <!-- Asignar valores 1 a 4 a las respuestas -->
+          <input type="radio" [name]="'question-left' + i" [value]="j+1" [(ngModel)]="question.selectedAnswerValue">
+          <label>{{ option }}</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="col-12 col-md-6">
+      <div *ngFor="let question of rightColumnQuestions; let i = index" class="form-group">
+        <label>{{ question.question }}</label>
+        <div *ngFor="let option of question.options; let j = index">
+          <!-- Asignar valores 1 a 4 a las respuestas -->
+          <input type="radio" [name]="'question-right' + i" [value]="j+1" [(ngModel)]="question.selectedAnswerValue">
+          <label>{{ option }}</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón de enviar -->
+    <div class="col-12 text-center mt-3">
+      <button type="submit" class="custom-btn">Enviar Respuesta</button>
+    </div>
+
+  </form>
+</div>
