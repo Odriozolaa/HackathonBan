@@ -1,4 +1,5 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';  // Asegúrate de importar Router
 import { CalculadoraComponent } from "../calculadora/calculadora.component";
 import { LineaComponent } from "../linea/linea.component";
 import { ChatbotComponent } from "../chatbot/chatbot.component";
@@ -8,8 +9,15 @@ import { ChatbotComponent } from "../chatbot/chatbot.component";
   standalone: true,
   imports: [CalculadoraComponent, LineaComponent, ChatbotComponent],
   templateUrl: './ruta.component.html',
-  styleUrl: './ruta.component.css'
+  styleUrls: ['./ruta.component.css']
 })
 export class RutaComponent {
 
+  // Inyecta el Router en el constructor
+  constructor(private router: Router) {}
+
+  // Define el método para redirigir a la página "modules"
+  goToModules(): void {
+    this.router.navigate(['/modules']);  // Redirige a /modules
+  }
 }

@@ -11,23 +11,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  credentials = { username: '', password: '' }; // Credenciales para iniciar sesión
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private router: Router) {}
 
-  isLoading = false;
-
-  login(): void {
-    this.authService.login(this.credentials).subscribe(
-      (response: any) => {
-        console.log('Login exitoso', response);
-        this.router.navigate(['/ruta']); // Redirige al dashboard
-      },
-      error => {
-        console.error('Error en el inicio de sesión', error);
-        alert('Credenciales incorrectas o problema con el servidor.');
-      }
-    );
-  }  
+  goToRuta(): void {
+    this.router.navigate(['/ruta']); // Redirige directamente a la página de "ruta"
+  }
 }
-
