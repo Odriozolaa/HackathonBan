@@ -21,7 +21,7 @@ export class LoginComponent {
     this.authService.login(this.credentials).subscribe(
       (response: any) => {
         console.log('Login exitoso', response);
-        this.router.navigate(['/home']); // Redirige al dashboard
+        this.router.navigate(['/ruta']); // Redirige al dashboard
       },
       error => {
         console.error('Error en el inicio de sesión', error);
