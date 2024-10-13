@@ -1,0 +1,49 @@
+.container {
+    max-width: 1200px;  /* Limitar el ancho de los contenedores para que no se extiendan demasiado */
+    margin: 0 auto;  /* Centrar el contenedor */
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;  /* Reducir el margen entre las tarjetas */
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-body ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .card-body li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-body li:last-child {
+    border-bottom: none;  /* Quitar la línea en el último elemento */
+  }
+  
+  h3, h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  h5 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .container, .card {
+    position: relative;  /* Asegura que los contenedores no tengan un z-index que sobrepase al header */
+    z-index: 1;  /* Valor bajo para que no sobrepasen el header */
+  }
