@@ -12,6 +12,7 @@
   .card-header {
     background-color: #f8f9fa;
     padding: 1rem;
+    cursor: pointer;
   }
   
   .card-body {
@@ -43,7 +44,9 @@
     font-size: 1.25rem;
     font-weight: bold;
   }
+  
   .container, .card {
     position: relative;  /* Asegura que los contenedores no tengan un z-index que sobrepase al header */
     z-index: 1;  /* Valor bajo para que no sobrepasen el header */
   }
+  
