@@ -1,0 +1,53 @@
+/* Contenedor principal de la línea */
+.linea-container {
+    padding: 40px 0;
+    position: relative;
+  }
+  
+  /* Línea horizontal */
+  .linea {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ccc;
+    z-index: 1;
+  }
+  
+  /* Contenedor de los puntos */
+  .linea-points {
+    z-index: 2;
+  }
+  
+  /* Cada punto y su etiqueta */
+  .linea-point-wrapper {
+    position: relative;
+  }
+  
+  /* Estilo de cada punto */
+  .linea-point {
+    width: 20px;
+    height: 20px;
+    background-color: #5B6670;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+    transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+  }
+  
+  /* Punto destacado */
+  .linea-point.highlighted {
+    background-color: #5B6670; /* Color de resaltado */
+    width: 25px;
+    height: 25px;
+  }
+  
+  /* Etiquetas de los puntos */
+  .linea-label {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    max-width: 150px;
+    text-align: center;
+  }
+  

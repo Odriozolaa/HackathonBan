@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-4">RUTA DE APRENDIZAJE</h2>
+    <div class="linea-container position-relative">
+      <!-- Línea horizontal -->
+      
+      <!-- Puntos en la línea -->
+      <div class="d-flex justify-content-between linea-points">
+        <div *ngFor="let point of lineaPoints; let i = index" class="linea-point-wrapper d-flex flex-column align-items-center">
+          <!-- Punto -->
+          <div class="linea-point" [ngClass]="{ 'highlighted': i === highlightedIndex }"></div>
+          <!-- Texto debajo del punto -->
+          <p class="linea-label text-center">{{ point }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
