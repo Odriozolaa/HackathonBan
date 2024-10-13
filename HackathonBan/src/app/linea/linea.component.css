@@ -1,53 +1,75 @@
 /* Contenedor principal de la línea */
 .linea-container {
-    padding: 40px 0;
-    position: relative;
-  }
-  
-  /* Línea horizontal */
-  .linea {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #ccc;
-    z-index: 1;
-  }
-  
-  /* Contenedor de los puntos */
-  .linea-points {
-    z-index: 2;
-  }
-  
-  /* Cada punto y su etiqueta */
-  .linea-point-wrapper {
-    position: relative;
-  }
-  
-  /* Estilo de cada punto */
-  .linea-point {
-    width: 20px;
-    height: 20px;
-    background-color: #5B6670;
-    border-radius: 50%;
-    position: relative;
-    z-index: 3;
-    transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
-  }
-  
-  /* Punto destacado */
-  .linea-point.highlighted {
-    background-color: #5B6670; /* Color de resaltado */
-    width: 25px;
-    height: 25px;
-  }
-  
-  /* Etiquetas de los puntos */
-  .linea-label {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    max-width: 150px;
-    text-align: center;
-  }
-  
+padding: 40px 0;
+position: relative;
+}
+
+
+/* Contenedor de los puntos */
+.linea-points {
+z-index: 2;
+}
+
+/* Cada punto y su etiqueta */
+.linea-point-wrapper {
+position: relative;
+flex: 1; /* Esto permitirá que los puntos ocupen espacio uniforme */
+margin: 10px;
+}
+
+/* Estilo de cada punto */
+.linea-point {
+width: 20px;
+height: 20px;
+background-color: #5B6670;
+border-radius: 50%;
+position: relative;
+z-index: 3;
+transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+/* Punto destacado */
+.linea-point.highlighted {
+background-color: #5B6670;
+width: 25px;
+height: 25px;
+}
+
+/* Etiquetas de los puntos */
+.linea-label {
+margin-top: 10px;
+font-size: 0.9rem;
+max-width: 150px;
+text-align: center;
+}
+
+/* Reglas responsivas */
+@media (max-width: 768px) {
+.linea {
+  top: 40%; /* Ajusta la línea para pantallas más pequeñas */
+}
+
+.linea-point-wrapper {
+  flex-basis: 100%; /* Los puntos se alinearán verticalmente */
+}
+
+.linea-label {
+  font-size: 0.8rem;
+}
+}
+
+@media (max-width: 576px) {
+.linea-label {
+  max-width: 100px; /* Reduce el ancho máximo de las etiquetas en móviles */
+}
+
+.linea-point {
+  width: 15px;
+  height: 15px;
+}
+
+.linea-point.highlighted {
+  width: 20px;
+  height: 20px;
+}
+}
