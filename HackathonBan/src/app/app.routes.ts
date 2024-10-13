@@ -9,6 +9,6 @@ export const appRoutes: Routes = [
 { path: 'register', component: RegisterComponent },
 { path: 'login', component: LoginComponent },
 { path: 'dashboard', component: DashboardComponent },
-{ path: '', component: HomeComponent, pathMatch: 'full' }, 
+{ path: '', component: DashboardComponent, pathMatch: 'full' }, 
 { path: 'productos', component: ProductosComponent },
 ];
