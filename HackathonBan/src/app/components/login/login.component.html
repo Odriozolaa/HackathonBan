@@ -3,13 +3,13 @@
 <div class="container w-50 mx-auto d-flex justify-content-center align-items-center vh-75">
 <form (ngSubmit)="login()">
 <div class="mb-2">
-    <label for="username" class="form-label" style="font-size: 14px;">Ingresa tu usuario</label>
-    <input type="text" id="username" [(ngModel)]="credentials.username" name="username" class="form-control" placeholder="Usuario" style="font-size: 16px;" required />
+    <label for="username" class="form-label" style="font-size: 16px;">Ingresa tu usuario</label>
+    <input type="text" id="username" [(ngModel)]="credentials.username" name="username" class="form-control" placeholder="Usuario" style="font-size: 13px;" required />
 </div>
 <div class="mb-2">
-    <label for="password" class="form-label" style="font-size: 18px;">Ingresa tu contraseña</label>
-    <input type="password" id="password" [(ngModel)]="credentials.password" name="password" class="form-control" placeholder="Contraseña" style="font-size: 20px;" required />
+    <label for="password" class="form-label" style="font-size: 14px;">Ingresa tu contraseña</label>
+    <input type="password" id="password" [(ngModel)]="credentials.password" name="password" class="form-control" placeholder="Contraseña" style="font-size: 14px;" required />
 </div>
-<button type="submit" class="btn btn-danger w-100" style="font-size: 16px;">Iniciar Sesión</button>
+<button type="submit" class="btn btn-danger w-100" style="font-size: 14px;">Iniciar Sesión</button>
 </form>
 </div>
