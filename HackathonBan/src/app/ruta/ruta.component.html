@@ -1,36 +1,27 @@
-<head>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
 <body>
-<div class="container mt-5">
-<div class="row">
-    <div class="col-12 mb-3">
-    <div class="custom-card text-center">
-        <h3>Encabezado Principal</h3>
-    </div>
-    </div>
-    <div class="col-md-6 mb-3">
-    <div class="custom-card h-100 d-flex align-items-center justify-content-center">
-        <h4 class="text-center"><em>¡Toma el control de tus finanzas con una ruta de aprendizaje personalizada! Aprende desde lo básico hasta lo avanzado, a tu propio ritmo y según tus necesidades. ¡Empieza hoy y asegura tu futuro financiero!</em></h4>
-    </div>
-    </div>
-    <div class="col-md-6 mb-3">
-    <div class="row h-100">
+    <div class="container mt-5">
+    <div class="row">
         <div class="col-12 mb-3">
-        <div class="custom-card d-flex align-items-center justify-content-center h-100">
-            <h4>Derecha Superior</h4>
+        <div class="custom-card text-center sticky-header">
+            <h3>Encabezado Principal</h3>
         </div>
         </div>
-        <div class="col-12 mb-3">
+
+        <!-- Contenedor donde está la frase -->
+        <div class="col-md-6 mb-3 d-flex align-items-stretch">
+        <div class="custom-card h-100 d-flex align-items-center justify-content-center">
+            <h4 class="text-center">
+            <em>¡Toma el control de tus finanzas con una ruta de aprendizaje personalizada! Aprende desde lo básico hasta lo avanzado, a tu propio ritmo y según tus necesidades. ¡Empieza hoy y asegura tu futuro financiero!</em>
+            </h4>
+        </div>
+        </div>
+
+        <!-- Contenedor donde está la calculadora -->
+        <div class="col-md-6 mb-3 align-items-stretch">
         <div class="custom-card d-flex align-items-center justify-content-center h-100">
             <app-calculadora></app-calculadora>
         </div>
         </div>
     </div>
     </div>
-</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

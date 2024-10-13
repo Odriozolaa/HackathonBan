@@ -1,12 +1,9 @@
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
-
-<div class="container-fluid vh-100 d-flex flex-column justify-content-start">
+<div class="container vh-100 d-flex flex-column justify-content-start"> <!-- Cambiado a "container" para respetar los márgenes laterales -->
   <div class="row w-100 g-2" style="margin-top: 10px;"> <!-- Ajuste de margen superior reducido para acercar los contenedores al header -->
     
     <!-- Contenedor 1: Título de bienvenida y login -->
     <div class="col-12 col-md-3 d-flex align-items-stretch">
-      <div class="w-100 bg-light text-center rounded border d-flex flex-column align-items-center justify-content-center ">
+      <div class="w-100 bg-light text-center rounded border d-flex flex-column align-items-center justify-content-center">
         <h2 class="welcome-title">Bienvenido a Educación Financiera con Banorte</h2>
         <app-login></app-login> <!-- Componente Login -->
       </div>
@@ -22,7 +19,7 @@
         <p class="app-call-to-action mt-4">
             ¡Empieza hoy mismo y toma el control de tu futuro financiero! <br>
             <strong>Inicia sesión para acceder a todas las funcionalidades y recursos personalizados.</strong>
-          </p>
+        </p>
       </div>
     </div>
 
@@ -30,8 +27,6 @@
     <div class="col-12 col-md-3 d-flex align-items-stretch">
       <div class="w-100 bg-light text-center rounded border d-flex flex-column align-items-center justify-content-between">
         <h4 class="app-features-title">Características clave</h4>
-
-        <!-- Lista de los puntos alineada hacia abajo -->
         <ul class="app-features-list text-center">
           <li>1. Módulos de aprendizaje interactivos</li>
           <li>2. Estadísticas personalizadas</li>
@@ -49,8 +44,8 @@
       <div class="w-100 bg-light text-center rounded border d-flex align-items-center justify-content-center">
         <div class="video-gallery">
           <!-- Puedes agregar múltiples iframes de YouTube con videos relacionados -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/exampleVideoID1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/exampleVideoID2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="520" height="315" src="https://www.youtube.com/embed/exampleVideoID1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="520" height="315" src="https://www.youtube.com/embed/exampleVideoID2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
