@@ -7,7 +7,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden; /* Ocultar cualquier desbordamiento horizontal */
+    overflow-x: hidden;
 }
 
 .header-container {
@@ -15,21 +15,69 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 64px;
+    height: 64px; /* Aumentamos la altura del header para más espacio */
     background-color: #EB0029;
-    background-image: url('/assets/navigation.png'); /* Corrección de la ruta */
+    background-image: url('/assets/navigation.png');
     background-repeat: repeat-x;
-    background-size: contain; /* Ajustar la imagen para que no se vea cortada */
+    background-size: contain;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 145px;
+    padding: 0 20px;
 }
 
 .logo-container {
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .logo {
-    height: 40px; /* Reducido el tamaño del logo para hacerlo más pequeño */
+    height: 40px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px; /* Aumentar el espacio entre los links */
+}
+
+.nav-link {
+    color: white;
+    font-size: 16px;
+    white-space: nowrap; /* Evitar que los links se dividan en varias líneas */
+}
+
+/* Estilos para el menú hamburguesa */
+@media (max-width: 1023px) {
+    .navbar-collapse {
+        background-color: #EB0029;
+        width: 100%; /* Ancho completo al desplegarse */
+    }
+
+    .navbar-nav {
+        display: block;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    .logo-container {
+        justify-content: flex-start;
+        padding-left: 145px;
+    }
+
+    .navbar {
+        padding-right: 135px; /* Padding para pantallas grandes */
+    }
+
+    .navbar-nav {
+        justify-content: flex-end;
+    }
 }
