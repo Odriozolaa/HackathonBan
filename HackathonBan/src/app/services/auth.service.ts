@@ -7,7 +7,7 @@ import { tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'https://hackathon-banorte-390732037168.us-central1.run.app/login'; // Cambia la URL de tu backend
+  private apiUrl = ''; // Cambia la URL de tu backend
 
   constructor(private http: HttpClient) { }
 

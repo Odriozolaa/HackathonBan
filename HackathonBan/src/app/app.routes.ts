@@ -23,6 +23,5 @@ export const appRoutes: Routes = [
 { path: 'modules', component: ModulesComponent},
 {path: 'linea', component: LineaComponent},
 {path: 'survey', component: SurveyComponent},
-{path:  'chatbot', component: ChatbotComponent}
-
+{path:  'chatbot', component: ChatbotComponent},
 ];

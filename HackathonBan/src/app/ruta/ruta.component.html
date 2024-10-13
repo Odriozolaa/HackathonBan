@@ -1,26 +1,27 @@
 <body>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-12 mb-3">
-          <div class="custom-card text-center sticky-header">
-            <app-linea></app-linea>
-          </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 mb-3">
+        <div class="custom-card text-center sticky-header">
+          <!-- Botón de Ruta de Aprendizaje con los colores personalizados -->
+          <a routerLink="/modules" class="btn ruta-aprendizaje-btn">Ruta de Aprendizaje</a>
+          <app-linea></app-linea>
         </div>
-  
-        <!-- Contenedor donde está el chatbot -->
-        <div class="col-12 col-md-8 mb-3 d-flex align-items-stretch">
-          <div class="custom-card h-100 d-flex align-items-center justify-content-center">
-            <app-chatbot></app-chatbot>
-          </div>
+      </div>
+
+      <!-- Contenedor donde está el chatbot -->
+      <div class="col-12 col-md-8 mb-3 d-flex align-items-stretch">
+        <div class="custom-card h-100 d-flex align-items-center justify-content-center">
+          <app-chatbot></app-chatbot>
         </div>
-  
-        <!-- Contenedor donde está la calculadora -->
-        <div class="col-12 col-md-4 mb-3 d-flex align-items-stretch">
-          <div class="custom-card d-flex align-items-center justify-content-center h-100">
-            <app-calculadora></app-calculadora>
-          </div>
+      </div>
+
+      <!-- Contenedor donde está la calculadora -->
+      <div class="col-12 col-md-4 mb-3 d-flex align-items-stretch">
+        <div class="custom-card d-flex align-items-center justify-content-center h-100">
+          <app-calculadora></app-calculadora>
         </div>
       </div>
     </div>
-  </body>
-  
+  </div>
+</body>

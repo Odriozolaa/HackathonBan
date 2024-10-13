@@ -14,3 +14,18 @@
     width: 35%; /* La calculadora ocupa menos espacio */
   }
 }
+.ruta-aprendizaje-btn {
+  background-color: #EB0029;
+  color: #FFFFFF;
+  font-family: 'Gotham Medium', sans-serif;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.ruta-aprendizaje-btn:hover {
+  background-color: #DB0026;
+  color: #FFFFFF;
+}
