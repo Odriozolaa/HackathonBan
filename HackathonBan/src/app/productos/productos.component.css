@@ -1,0 +1,23 @@
+.section-title {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin-top: 0.5rem;
+  }
+  
+  .img-fluid {
+    border-radius: 10px 10px 0 0; /* Añadir bordes redondeados solo en la parte superior de la imagen */
+  }
+  
